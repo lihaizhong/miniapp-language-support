@@ -1,0 +1,48 @@
+{
+  "name": "mp-little-helper",
+  "displayName": "mp-little-helper",
+  "description": "多端小程序格式支持工具",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.87.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "mpxml",
+        "aliases": ["mpxml"],
+        "extensions": [".wxml",".axml",".ttml"],
+        "configuration": "./syntaxes/language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "wxml",
+        "scopeName": "text.html.wxml",
+        "path": "./syntaxes/wxml.tmLanguage.json",
+        "embeddedLanguages": {
+          "text.html": "html"
+        }
+      },
+      {
+        "language": "axml",
+        "scopeName": "text.html.axml",
+        "path": "./syntaxes/axml.tmLanguage.json",
+        "embeddedLanguages": {
+          "text.html": "html"
+        }
+      },
+      {
+        "language": "ttml",
+        "scopeName": "text.html.ttml",
+        "path": "./syntaxes/ttml.tmLanguage.json",
+        "embeddedLanguages": {
+          "text.html": "html"
+        }
+      }
+    ]
+  }
+}
