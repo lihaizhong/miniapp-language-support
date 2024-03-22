@@ -1,6 +1,6 @@
 {
-  "name": "mp-little-helper",
-  "displayName": "mp-little-helper",
+  "name": "miniapp-language-support",
+  "displayName": "miniapp-language-support",
   "description": "多端小程序格式支持工具",
   "version": "0.0.1",
   "engines": {
@@ -15,32 +15,35 @@
         "id": "mpxml",
         "aliases": ["mpxml"],
         "extensions": [".wxml",".axml",".ttml"],
-        "configuration": "./syntaxes/language-configuration.json"
+        "configuration": "./language-configuration.json"
       }
     ],
     "grammars": [
       {
-        "language": "wxml",
+        "language": "mpxml",
         "scopeName": "text.html.wxml",
         "path": "./syntaxes/wxml.tmLanguage.json",
         "embeddedLanguages": {
-          "text.html": "html"
+          "text.html": "html",
+          "source.js": "js"
         }
       },
       {
-        "language": "axml",
+        "language": "mpxml",
         "scopeName": "text.html.axml",
         "path": "./syntaxes/axml.tmLanguage.json",
         "embeddedLanguages": {
-          "text.html": "html"
+          "text.html": "html",
+          "source.js": "js"
         }
       },
       {
-        "language": "ttml",
+        "language": "mpxml",
         "scopeName": "text.html.ttml",
         "path": "./syntaxes/ttml.tmLanguage.json",
         "embeddedLanguages": {
-          "text.html": "html"
+          "text.html": "html",
+          "source.js": "js"
         }
       }
     ]

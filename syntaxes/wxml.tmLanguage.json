@@ -2,6 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
   "name": "WXML",
   "scopeName": "text.html.wxml",
+  "uuid": "b2367c0b-8c78-4eea-947c-d437f90bc5ac",
   "repository": {
     "tag-id-attribute": {
       "end": "(?!\\G)(?<='|\"|[^\\s<>/])",
@@ -228,7 +229,6 @@
       }
     }
   },
-  "uuid": "ca2e4260-5d62-45bf-8cf1-d8b5cc19c8f9",
   "patterns": [
     {
       "include": "#wxml-interpolations"

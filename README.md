@@ -1,6 +1,6 @@
-# mp-little-helper README
+# miniapp-language-support README
 
-This is the README for your extension "mp-little-helper". After writing up a brief description, we recommend including the following sections.
+This is the README for your extension "miniapp-language-support". After writing up a brief description, we recommend including the following sections.
 
 ## Features
 

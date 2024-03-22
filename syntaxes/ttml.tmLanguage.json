@@ -1,7 +1,8 @@
 {
   "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-  "name": "WXML",
-  "scopeName": "text.html.wxml",
+  "name": "TTML",
+  "scopeName": "text.html.ttml",
+  "uuid": "12556083-4164-48d4-9e67-e6bfecfcf234",
   "repository": {
     "tag-id-attribute": {
       "end": "(?!\\G)(?<='|\"|[^\\s<>/])",
@@ -20,7 +21,7 @@
           "end": "\"",
           "patterns": [
             {
-              "include": "#wxml-interpolations"
+              "include": "#ttml-interpolations"
             },
             {
               "include": "#entities"
@@ -44,7 +45,7 @@
           "end": "'",
           "patterns": [
             {
-              "include": "#wxml-interpolations"
+              "include": "#ttml-interpolations"
             },
             {
               "include": "#entities"
@@ -86,7 +87,7 @@
     "tag-stuff": {
       "patterns": [
         {
-          "include": "#wxml-directives"
+          "include": "#ttml-directives"
         },
         {
           "include": "#tag-id-attribute"
@@ -129,7 +130,7 @@
       "end": "\"",
       "patterns": [
         {
-          "include": "#wxml-interpolations"
+          "include": "#ttml-interpolations"
         },
         {
           "include": "#entities"
@@ -148,9 +149,9 @@
         }
       }
     },
-    "wxml-directives": {
+    "ttml-directives": {
       "end": "(?<='|\")|(?=[\\s<>`])",
-      "name": "meta.directive.wxml",
+      "name": "meta.directive.ttml",
       "begin": "((?:\\b(v-|bind:?|catch:?|capture-bind:?|mut-bind:|capture-catch:)|(:|@))([a-zA-Z\\-\\_]+)(?:\\:([a-zA-Z\\-\\_]+))?(?:\\.([a-zA-Z\\-\\_]+))*)\\s*(=)",
       "captures": {
         "1": {
@@ -162,8 +163,8 @@
       },
       "patterns": [
         {
-          "name": "source.directive.wxml",
-          "contentName": "support.function.wxml",
+          "name": "source.directive.ttml",
+          "contentName": "support.function.ttml",
           "begin": "([\"'])",
           "beginCaptures": {
             "1": {
@@ -179,7 +180,7 @@
         }
       ]
     },
-    "wxml-interpolations": {
+    "ttml-interpolations": {
       "patterns": [
         {
           "contentName": "markup.blob markup.heading",
@@ -191,14 +192,14 @@
           ],
           "beginCaptures": {
             "0": {
-              "name": "support.constant.handlebars.wxml"
+              "name": "support.constant.handlebars.ttml"
             }
           },
-          "name": "expression.embedded.wxml",
+          "name": "expression.embedded.ttml",
           "begin": "\\{\\{",
           "endCaptures": {
             "0": {
-              "name": "support.constant.handlebars.wxml"
+              "name": "support.constant.handlebars.ttml"
             }
           }
         }
@@ -208,7 +209,7 @@
       "end": "'",
       "patterns": [
         {
-          "include": "#wxml-interpolations"
+          "include": "#ttml-interpolations"
         },
         {
           "include": "#entities"
@@ -228,10 +229,9 @@
       }
     }
   },
-  "uuid": "ca2e4260-5d62-45bf-8cf1-d8b5cc19c8f9",
   "patterns": [
     {
-      "include": "#wxml-interpolations"
+      "include": "#ttml-interpolations"
     },
     {
       "end": "(>)(<)(/)(\\2)(>)",
@@ -439,7 +439,7 @@
         {
           "end": "(?=</template>)",
           "begin": "(>)",
-          "contentName": "text.html.wxml",
+          "contentName": "text.html.ttml",
           "beginCaptures": {
             "1": {
               "name": "punctuation.definition.tag.end.html"
@@ -447,7 +447,7 @@
           },
           "patterns": [
             {
-              "include": "text.html.wxml"
+              "include": "text.html.ttml"
             }
           ]
         }
