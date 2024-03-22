@@ -2,3 +2,5 @@
 .vscode-test/**
 .gitignore
 vsc-extension-quickstart.md
+vsc-package-explain.md
+vsc-tmlanguage-explain.md
