@@ -13,7 +13,7 @@
     "languages": [
       {
         "id": "mpxml",
-        "aliases": ["mpxml"],
+        "aliases": ["MPXML"],
         "extensions": [".wxml",".axml",".ttml"],
         "configuration": "./language-configuration.json"
       }
